@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color: maroon;
+}
+
+.text{
+    display: flex;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+    background-color: cyan;
+}
+
+caption{
+    font-size: 24px;
+    color: blue;
+}
+
+th, td{
+    border: 2px solid blue;
+}
+
+li{
+    color: red;
+}
+
+a{
+    color: green;
+}
+
+a:link{
+    color: green;
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    color: blue;
+}
+
+
