@@ -1,38 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="main.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-commerce</title>
-</head>
-<body>
-    <h1>eCommerce</h1>
-    <div class="text"><p> Ecommerce or electronic commerce, a subset of ebusiness, e-commerce is the purchasing, and exchanging of goods
-      and services over computer networks (such as the internet) through which transactions or terms of sale are performed electronically.</p>
-    <img src="OIP.png" alt="doraemon"></div>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My blog about my life</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-      
-    <table>
-        <caption><strong>eCommerce requirement</strong></caption>
-        <tr>
-            <th>Shoppint cart</th>
-            <th>Merchant account</th>
-        </tr>
-        <tr>
-            <td>Processing gateway</td>
-            <td>Digital Certificate</td>
-        </tr>
-    </table>
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background: #ffffff;
+        color: #111;
+        line-height: 1.6;
+      }
 
-    <h1>Ecommerce can be broken into four main categories</h1>
+      /* Container*/
+      .site {
+        width: 100%;
+        max-width: 1100px;
+        margin: 18px auto;
+        border-left: 0;
+      }
 
-    <ul>
-        <li><a href="https://en.wikipedia.org/wiki/G-Dragon?utm_source=chatgpt.com">B2B (Business-to-Business)</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/G-Dragon?utm_source=chatgpt.com">B2C (Business-to-Consumer)</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/G-Dragon?utm_source=chatgpt.com">C2B (Consumer-to-Business)</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/G-Dragon?utm_source=chatgpt.com">C2C (Consumer-to-Consumer)</a></li>
-    </ul>
+      /* Header */
+      header.site-header {
+        background: #ffef3b;
+        padding: 14px 20px;
+        text-align: center;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.03) 0 1px 0;
+        margin-bottom: 18px;
+      }
+      header.site-header h1 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: #111;
+        margin: 0;
+      }
 
-</body>
+      .layout {
+        display: flex;
+        gap: 28px;
+        align-items: flex-start;
+      }
+
+      /* menu trái */
+      nav.sidebar {
+        width: 160px;
+        padding: 8px 12px;
+      }
+      nav.sidebar h2 {
+        font-family: Georgia, serif;
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      nav.sidebar ul {
+        list-style: none;
+      }
+      nav.sidebar a {
+        display: block;
+        margin: 6px 0;
+        text-decoration: underline;
+        color: #2a4db7;
+      }
+
+      /* Nội dung */
+      main.content {
+        flex: 1 1 0;
+        padding: 0 18px;
+        border-left: 4px solid #5aa56c;
+        min-width: 420px;
+      }
+      article.post {
+        margin-bottom: 28px;
+      }
+      article.post h3 {
+        font-family: Georgia, serif;
+        font-size: 28px;
+        margin: 12px 0;
+        font-weight: 700;
+      }
+      .date {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 8px;
+        font-style: italic;
+      }
+      article.post p {
+        margin: 8px 0 12px;
+        font-size: 16px;
+        color: #222;
+      }
+
+      /* Last posts */
+      aside.right {
+        width: 180px;
+        padding: 12px;
+      }
+      .last-posts {
+        border: 3px dotted #8aa;
+        padding: 12px;
+      }
+      .last-posts h3 {
+        font-family: Georgia, serif;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      .last-posts a {
+        display: block;
+        margin: 8px 0;
+        text-decoration: underline;
+        color: #2a4db7;
+        font-size: 14px;
+      }
+
+      /* Footer */
+      footer.site-footer {
+        text-align: center;
+        margin-top: 28px;
+        padding: 10px 0 30px;
+      }
+      footer a {
+        color: #2a4db7;
+        text-decoration: underline;
+      }
+
+      /* Responsive */
+      @media (max-width: 800px) {
+        .layout {
+          flex-direction: column;
+        }
+        nav.sidebar,
+        aside.right {
+          width: 100%;
+        }
+        main.content {
+          border-left: none;
+          padding-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <h1>My blog about my life</h1>
+      </header>
+
+      <div class="layout">
+        <!-- Menu trái -->
+        <nav class="sidebar" aria-label="Menu">
+          <h2>Menu</h2>
+          <ul>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Yesterday</a></li>
+            <li><a href="#">Last week</a></li>
+            <li><a href="#">Archives</a></li>
+          </ul>
+        </nav>
+
+        <!-- Nội dung -->
+        <main class="content" role="main">
+          <article class="post">
+            <h3>Meeting with supervisor</h3>
+            <div class="date">14 Dec 2011</div>
+            <p>Today I went to the university by bus.</p>
+            <p>I had a meeting with my PhD supervisor.</p>
+          </article>
+
+          <article class="post">
+            <h3>New car!!!</h3>
+            <div class="date">12 Dec 2011</div>
+            <p>
+              Today I bought my new car. It's a Honda Accord and it's really
+              nice.
+            </p>
+            <p>I met some friends at a pub.</p>
+          </article>
+
+          <article class="post">
+            <h3>Visit my parents</h3>
+            <div class="date">10 Dec 2011</div>
+            <p>Tried to contact my PhD supervisor. He was out of his office.</p>
+            <p>I visited my parents and we had a nice dinner together.</p>
+          </article>
+        </main>
+
+        <!-- Aside -->
+        <aside class="right" aria-label="Last posts">
+          <div class="last-posts">
+            <h3>Last posts</h3>
+            <a href="#">Meeting with supervisor</a>
+            <a href="#">New car!!!</a>
+            <a href="#">Visit my parents</a>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="site-footer">
+        Contact me: <a href="mailto:email@something.com">email@something.com</a>
+      </footer>
+    </div>
+  </body>
 </html>
